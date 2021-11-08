@@ -70,4 +70,4 @@ async def rcError(ctx, error: commands.CommandError):
 
 # run
 
-client.run('ODkwMzYxMTIyMTI4MDE1NDMw.YUuraQ.-88JyuqzbSWwfmBg2hxEDZWqPzo')
+client.run(os.getenv('DISCORD_TOKEN'))
