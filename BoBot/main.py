@@ -45,9 +45,11 @@ async def sendEmbed(ctx, message = '', title = '', img = '', attach = None, foot
 
 # cogs
 
-for file in os.listdir('/cogs'):
-  if file.endswith('.py'):
-    client.load_extension(f'cogs.{file[:-3]}')
+#for file in os.listdir('./cogs'):
+ # if file.endswith('.py'):
+  #  client.load_extension(f'cogs.{file[:-3]}')
+for file in os.listdir():
+  print(file)
 
 @client.command()
 @commands.has_any_role(890275139676143648, 890225719974723686, 890228091958493214)
