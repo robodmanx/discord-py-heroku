@@ -1,3 +1,5 @@
+import os
+
 for i in os.listdir():
   if i == 'BoBot':
     os.chdir(i)
