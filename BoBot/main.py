@@ -5,6 +5,10 @@ from discord.ext import commands
 import os
 import json
 
+# setup
+
+os.chdir(./BoBot)
+
 # config
 
 def accessConfig(server: int = 890220889688408074, param: str = '', mode: str = 'read', to_write = None): 
@@ -45,7 +49,7 @@ async def sendEmbed(ctx, message = '', title = '', img = '', attach = None, foot
 
 # cogs
 
-for file in os.listdir('./BoBot/cogs'):
+for file in os.listdir('./cogs'):
   if file.endswith('.py'):
     client.load_extension(f'cogs.{file[:-3]}')
 
