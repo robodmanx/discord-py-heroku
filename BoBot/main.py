@@ -8,9 +8,8 @@ import json
 # setup
 
 for i in os.listdir():
-  print(i)
-
-os.chdir('BoBot')
+  if i == 'BoBot':
+    os.chdir(i)
 
 # config
 
