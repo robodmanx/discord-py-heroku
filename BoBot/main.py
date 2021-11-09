@@ -7,7 +7,10 @@ import json
 
 # setup
 
-os.chdir('*\BoBot')
+for i in os.listdir():
+  print(i)
+
+os.chdir('./BoBot')
 
 # config
 
