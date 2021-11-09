@@ -21,6 +21,8 @@ class Events(commands.Cog):
   @commands.Cog.listener()
   async def on_message(self, message):
     await counting.count(self, message)
+    if message.content == 'boi you built like a':
+      await ctx.send(file = discord.File('panjabi.mp3'))
 
   @commands.Cog.listener()
   async def on_message_delete(self, message):
