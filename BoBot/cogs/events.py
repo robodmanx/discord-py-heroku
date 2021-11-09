@@ -9,7 +9,6 @@ from discord.utils import get
 
 from main import sendEmbed
 from functions import counting
-from functions import boost_check
 
 import time
 import discord
