@@ -1,1 +1,1 @@
-web: python BoBot/main.py
+worker: python BoBot/main.py
