@@ -1,3 +1,7 @@
+for i in os.listdir():
+  if i == 'BoBot':
+    os.chdir(i)
+
 import discord
 import random
 from discord.ext import commands
