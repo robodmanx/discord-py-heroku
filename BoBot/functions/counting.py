@@ -1,3 +1,7 @@
+for i in os.listdir():
+  if i == 'BoBot':
+    os.chdir(i)
+
 from main import accessConfig, sendEmbed
   
 async def count(self, message):
